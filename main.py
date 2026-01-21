@@ -153,8 +153,8 @@ if uploaded_file is not None:
     # texts(종이조각)를 embeddings_model(번역기)로 변환해서 db(서랍)에 넣습니다.
     
     # 캐싱 문제 발생시 아래 코드를 2줄을 주석해제 하여서 사용하시면 됩니다.
-    # import chromadb
-    # chromadb.api.client.SharedSystemClient.clear_system_cache()
+    import chromadb
+    chromadb.api.client.SharedSystemClient.clear_system_cache()
 
     db = Chroma.from_documents(texts, embeddings_model)  # 경로(persist_directory)가 없으므로 메모리에 만들고, 끄면 사라집니다.
     # ==========================================
