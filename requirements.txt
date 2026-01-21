@@ -1,10 +1,11 @@
 streamlit
-langchain
-langchain-community
-langchain-core
-langchain-text-splitters
-langchain-openai
-langchain-chroma
+langchain==0.3.20
+langchain-chroma==0.2.2
+langchain-community==0.3.18
+langchain-core==0.3.45
+langchain-openai==0.3.7
+langchain-text-splitters==0.3.6
+langchainhub==0.1.15
 pypdf
 python-dotenv
 pysqlite3-binary
