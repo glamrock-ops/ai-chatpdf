@@ -10,3 +10,4 @@ pypdf
 python-dotenv
 pysqlite3-binary
 tiktoken
+chromadb==0.5.23
