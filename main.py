@@ -1,7 +1,7 @@
 # Streamlit Cloud에 배포하기 위해 requirements.txt 파일에도 pysqlite3-binary 패키지를 추가하고, 그리고 아래 주석을 해제하여서 진행 부탁드립니다. 
-# __import__('pysqlite3')
-# import sys
-# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # ==========================================
 # [1] 라이브러리 및 모듈 가져오기 - 도구상자 열기
